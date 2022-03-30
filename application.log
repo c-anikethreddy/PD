@@ -1,0 +1,604 @@
+2022-03-29 14:20:11.016  INFO 12364 --- [restartedMain] nsionDisbursementMicroserviceApplication : No active profile set, falling back to default profiles: default
+2022-03-29 14:20:12.507  INFO 12364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-29 14:20:12.609  INFO 12364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77ms. Found 0 JPA repository interfaces.
+2022-03-29 14:20:13.087  INFO 12364 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c187ea9d-bf92-3f9b-8e21-276e7ea9fc94
+2022-03-29 14:20:14.139  INFO 12364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2022-03-29 14:20:14.163  INFO 12364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-29 14:20:14.163  INFO 12364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-03-29 14:20:14.413  INFO 12364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/pdis]   : Initializing Spring embedded WebApplicationContext
+2022-03-29 14:20:14.413  INFO 12364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3360 ms
+2022-03-29 14:20:14.472  INFO 12364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-29 14:20:14.693  INFO 12364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-29 14:20:14.701  INFO 12364 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:b261017f-9e60-4c60-a80a-f471767a7214'
+2022-03-29 14:20:14.962  INFO 12364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-29 14:20:15.086  INFO 12364 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-03-29 14:20:15.524  INFO 12364 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-29 14:20:15.892  INFO 12364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-03-29 14:20:16.445  INFO 12364 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-29 14:20:16.467  INFO 12364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:20:16.597  INFO 12364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-29 14:20:16.862  WARN 12364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-29 14:20:17.898  INFO 12364 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-29 14:20:17.973  WARN 12364 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-03-29 14:20:17.973  INFO 12364 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-29 14:20:17.988  WARN 12364 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-03-29 14:20:17.989  INFO 12364 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-29 14:20:18.293  INFO 12364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:20:19.774  INFO 12364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/pdis'
+2022-03-29 14:20:20.452  INFO 12364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-29 14:20:20.483  INFO 12364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-29 14:20:20.533  INFO 12364 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-29 14:20:20.822  INFO 12364 --- [restartedMain] nsionDisbursementMicroserviceApplication : Started PensionDisbursementMicroserviceApplication in 12.303 seconds (JVM running for 13.6)
+2022-03-29 14:20:31.410  INFO 12364 --- [http-nio-9292-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/pdis]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-29 14:20:31.410  INFO 12364 --- [http-nio-9292-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-29 14:20:31.421  INFO 12364 --- [http-nio-9292-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2022-03-29 14:20:31.874  INFO 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:20:31.874 DEBUG 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.c.PensionDisbursementController    : 509876450123 57500.0
+2022-03-29 14:20:31.875  INFO 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:20:31.875 DEBUG 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 509876450123
+2022-03-29 14:20:32.579 DEBUG 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.c.PensionDisbursementController    : Pensioner-Detail MS is down!! Fallback route enabled. Time: Tue Mar 29 14:20:32 IST 2022
+2022-03-29 14:20:32.580 DEBUG 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.c.PensionDisbursementController    : returned status: Pensioner Detail micro service down, Please try again later
+2022-03-29 14:20:49.027  INFO 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:20:49.028 DEBUG 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.c.PensionDisbursementController    : 509876450123 57500.0
+2022-03-29 14:20:49.028  INFO 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:20:49.028 DEBUG 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 509876450123
+2022-03-29 14:20:49.507 DEBUG 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.c.PensionDisbursementController    : Pensioner-Detail MS is down!! Fallback route enabled. Time: Tue Mar 29 14:20:49 IST 2022
+2022-03-29 14:20:49.509 DEBUG 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.c.PensionDisbursementController    : returned status: Pensioner Detail micro service down, Please try again later
+2022-03-29 14:21:12.328  INFO 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:21:12.330 DEBUG 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.c.PensionDisbursementController    : 509876450123 57500.0
+2022-03-29 14:21:12.330  INFO 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:21:12.330 DEBUG 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 509876450123
+2022-03-29 14:21:12.788 DEBUG 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.c.PensionDisbursementController    : Pensioner-Detail MS is down!! Fallback route enabled. Time: Tue Mar 29 14:21:12 IST 2022
+2022-03-29 14:21:12.789 DEBUG 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.c.PensionDisbursementController    : returned status: Pensioner Detail micro service down, Please try again later
+2022-03-29 14:21:16.907  INFO 12364 --- [http-nio-9292-exec-8] c.c.p.c.PensionDisbursementController    : START :: Method :: bankServiceCharge() :: 
+2022-03-29 14:21:16.909 DEBUG 12364 --- [http-nio-9292-exec-8] c.c.p.c.PensionDisbursementController    : public
+2022-03-29 14:21:16.909  INFO 12364 --- [http-nio-9292-exec-8] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: getBankCharge() :: 
+2022-03-29 14:21:16.909 DEBUG 12364 --- [http-nio-9292-exec-8] c.c.p.s.PensionDisbursementServiceImpl   : service charge: 500.0
+2022-03-29 14:21:16.909  INFO 12364 --- [http-nio-9292-exec-8] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: getBankCharge() :: 
+2022-03-29 14:21:16.909  INFO 12364 --- [http-nio-9292-exec-8] c.c.p.c.PensionDisbursementController    : END :: Method :: bankServiceCharge() :: 
+2022-03-29 14:23:55.337  INFO 12364 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:23:55.352  INFO 12364 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:23:55.353  INFO 12364 --- [Thread-6] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-03-29 14:23:55.570  WARN 12364 --- [Thread-6] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-03-29 14:23:55.571  INFO 12364 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-29 14:23:55.573  INFO 12364 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-29 14:23:56.762  INFO 12364 --- [restartedMain] nsionDisbursementMicroserviceApplication : No active profile set, falling back to default profiles: default
+2022-03-29 14:23:57.352  INFO 12364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-29 14:23:57.358  INFO 12364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2022-03-29 14:23:57.453  INFO 12364 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c187ea9d-bf92-3f9b-8e21-276e7ea9fc94
+2022-03-29 14:23:57.587  INFO 12364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2022-03-29 14:23:57.589  INFO 12364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-29 14:23:57.590  INFO 12364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-03-29 14:23:57.659  INFO 12364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/pdis]   : Initializing Spring embedded WebApplicationContext
+2022-03-29 14:23:57.661  INFO 12364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 894 ms
+2022-03-29 14:23:57.691  INFO 12364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-03-29 14:23:57.693  INFO 12364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-03-29 14:23:57.694  INFO 12364 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ea8349e8-57b4-4aa4-a084-15b4f0696c2d'
+2022-03-29 14:23:57.732  INFO 12364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-29 14:23:57.737  INFO 12364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-03-29 14:23:57.744  INFO 12364 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-29 14:23:57.744  INFO 12364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:23:57.768  INFO 12364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-29 14:23:57.847  WARN 12364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-29 14:23:58.152  INFO 12364 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-29 14:23:58.165  WARN 12364 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-03-29 14:23:58.165  INFO 12364 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-29 14:23:58.258  INFO 12364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:23:58.838  INFO 12364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/pdis'
+2022-03-29 14:23:59.170  INFO 12364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-29 14:23:59.172  INFO 12364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-29 14:23:59.177  INFO 12364 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-29 14:23:59.223  INFO 12364 --- [restartedMain] nsionDisbursementMicroserviceApplication : Started PensionDisbursementMicroserviceApplication in 3.602 seconds (JVM running for 232.002)
+2022-03-29 14:23:59.229  INFO 12364 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-29 14:24:05.921  INFO 12364 --- [http-nio-9292-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/pdis]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-29 14:24:05.923  INFO 12364 --- [http-nio-9292-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-29 14:24:05.932  INFO 12364 --- [http-nio-9292-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-03-29 14:24:05.956  INFO 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:24:05.957 DEBUG 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.c.PensionDisbursementController    : 509876450123 57500.0
+2022-03-29 14:24:05.958  INFO 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:24:05.959 DEBUG 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 509876450123
+2022-03-29 14:24:06.969 DEBUG 12364 --- [HystrixTimer-1] c.c.p.c.PensionDisbursementController    : Pensioner-Detail MS is down!! Fallback route enabled. Time: Tue Mar 29 14:24:06 IST 2022
+2022-03-29 14:24:06.971 DEBUG 12364 --- [HystrixTimer-1] c.c.p.c.PensionDisbursementController    : returned status: Pensioner Detail micro service down, Please try again later
+2022-03-29 14:24:07.616 DEBUG 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:24:07.617 DEBUG 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.s.PensionDisbursementServiceImpl   : familypension amount calculation success
+2022-03-29 14:24:07.618 DEBUG 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.c.PensionDisbursementController    : returned status: Success
+2022-03-29 14:24:07.619 DEBUG 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.c.PensionDisbursementController    : set done: 10
+2022-03-29 14:24:07.619  INFO 12364 --- [hystrix-PensionDisbursementController-1] c.c.p.c.PensionDisbursementController    : END :: Method :: pensionDisbursement() :: 
+2022-03-29 14:24:27.753  INFO 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:24:27.754 DEBUG 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.c.PensionDisbursementController    : 509876450123 57500.0
+2022-03-29 14:24:27.754  INFO 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:24:27.755 DEBUG 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 509876450123
+2022-03-29 14:24:28.764 DEBUG 12364 --- [HystrixTimer-1] c.c.p.c.PensionDisbursementController    : Pensioner-Detail MS is down!! Fallback route enabled. Time: Tue Mar 29 14:24:28 IST 2022
+2022-03-29 14:24:28.765 DEBUG 12364 --- [HystrixTimer-1] c.c.p.c.PensionDisbursementController    : returned status: Pensioner Detail micro service down, Please try again later
+2022-03-29 14:24:31.935 DEBUG 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:24:31.936 DEBUG 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.s.PensionDisbursementServiceImpl   : familypension amount calculation success
+2022-03-29 14:24:31.936 DEBUG 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.c.PensionDisbursementController    : returned status: Success
+2022-03-29 14:24:31.936 DEBUG 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.c.PensionDisbursementController    : set done: 10
+2022-03-29 14:24:31.937  INFO 12364 --- [hystrix-PensionDisbursementController-2] c.c.p.c.PensionDisbursementController    : END :: Method :: pensionDisbursement() :: 
+2022-03-29 14:24:38.422  INFO 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:24:38.423 DEBUG 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.c.PensionDisbursementController    : 509876450123 57500.0
+2022-03-29 14:24:38.423  INFO 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:24:38.424 DEBUG 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 509876450123
+2022-03-29 14:24:39.388 DEBUG 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:24:39.390 DEBUG 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.s.PensionDisbursementServiceImpl   : familypension amount calculation success
+2022-03-29 14:24:39.391 DEBUG 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.c.PensionDisbursementController    : returned status: Success
+2022-03-29 14:24:39.392 DEBUG 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.c.PensionDisbursementController    : set done: 10
+2022-03-29 14:24:39.392  INFO 12364 --- [hystrix-PensionDisbursementController-3] c.c.p.c.PensionDisbursementController    : END :: Method :: pensionDisbursement() :: 
+2022-03-29 14:25:10.022  INFO 12364 --- [hystrix-PensionDisbursementController-4] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:25:10.023 DEBUG 12364 --- [hystrix-PensionDisbursementController-4] c.c.p.c.PensionDisbursementController    : 509876450123 57500.0
+2022-03-29 14:25:10.023  INFO 12364 --- [hystrix-PensionDisbursementController-4] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:25:10.024 DEBUG 12364 --- [hystrix-PensionDisbursementController-4] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 509876450123
+2022-03-29 14:25:10.580 DEBUG 12364 --- [hystrix-PensionDisbursementController-4] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:25:10.581 DEBUG 12364 --- [hystrix-PensionDisbursementController-4] c.c.p.s.PensionDisbursementServiceImpl   : familypension amount calculation success
+2022-03-29 14:25:10.582 DEBUG 12364 --- [hystrix-PensionDisbursementController-4] c.c.p.c.PensionDisbursementController    : returned status: Success
+2022-03-29 14:25:10.582 DEBUG 12364 --- [hystrix-PensionDisbursementController-4] c.c.p.c.PensionDisbursementController    : set done: 10
+2022-03-29 14:25:10.582  INFO 12364 --- [hystrix-PensionDisbursementController-4] c.c.p.c.PensionDisbursementController    : END :: Method :: pensionDisbursement() :: 
+2022-03-29 14:25:29.325  INFO 12364 --- [hystrix-PensionDisbursementController-5] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:25:29.326 DEBUG 12364 --- [hystrix-PensionDisbursementController-5] c.c.p.c.PensionDisbursementController    : 509876450123 57500.0
+2022-03-29 14:25:29.326  INFO 12364 --- [hystrix-PensionDisbursementController-5] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:25:29.326 DEBUG 12364 --- [hystrix-PensionDisbursementController-5] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 509876450123
+2022-03-29 14:25:29.932 DEBUG 12364 --- [hystrix-PensionDisbursementController-5] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:25:29.933 DEBUG 12364 --- [hystrix-PensionDisbursementController-5] c.c.p.s.PensionDisbursementServiceImpl   : familypension amount calculation success
+2022-03-29 14:25:29.933 DEBUG 12364 --- [hystrix-PensionDisbursementController-5] c.c.p.c.PensionDisbursementController    : returned status: Success
+2022-03-29 14:25:29.933 DEBUG 12364 --- [hystrix-PensionDisbursementController-5] c.c.p.c.PensionDisbursementController    : set done: 10
+2022-03-29 14:25:29.935  INFO 12364 --- [hystrix-PensionDisbursementController-5] c.c.p.c.PensionDisbursementController    : END :: Method :: pensionDisbursement() :: 
+2022-03-29 14:25:58.399  INFO 12364 --- [hystrix-PensionDisbursementController-6] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:25:58.400 DEBUG 12364 --- [hystrix-PensionDisbursementController-6] c.c.p.c.PensionDisbursementController    : 509876450123 57500.0
+2022-03-29 14:25:58.401  INFO 12364 --- [hystrix-PensionDisbursementController-6] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:25:58.401 DEBUG 12364 --- [hystrix-PensionDisbursementController-6] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 509876450123
+2022-03-29 14:25:59.234 DEBUG 12364 --- [hystrix-PensionDisbursementController-6] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:25:59.235 DEBUG 12364 --- [hystrix-PensionDisbursementController-6] c.c.p.s.PensionDisbursementServiceImpl   : familypension amount calculation success
+2022-03-29 14:25:59.236 DEBUG 12364 --- [hystrix-PensionDisbursementController-6] c.c.p.c.PensionDisbursementController    : returned status: Success
+2022-03-29 14:25:59.236 DEBUG 12364 --- [hystrix-PensionDisbursementController-6] c.c.p.c.PensionDisbursementController    : set done: 10
+2022-03-29 14:25:59.237  INFO 12364 --- [hystrix-PensionDisbursementController-6] c.c.p.c.PensionDisbursementController    : END :: Method :: pensionDisbursement() :: 
+2022-03-29 14:26:03.323  INFO 12364 --- [http-nio-9292-exec-2] c.c.p.c.PensionDisbursementController    : START :: Method :: bankServiceCharge() :: 
+2022-03-29 14:26:03.324 DEBUG 12364 --- [http-nio-9292-exec-2] c.c.p.c.PensionDisbursementController    : public
+2022-03-29 14:26:03.325  INFO 12364 --- [http-nio-9292-exec-2] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: getBankCharge() :: 
+2022-03-29 14:26:03.325 DEBUG 12364 --- [http-nio-9292-exec-2] c.c.p.s.PensionDisbursementServiceImpl   : service charge: 500.0
+2022-03-29 14:26:03.325  INFO 12364 --- [http-nio-9292-exec-2] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: getBankCharge() :: 
+2022-03-29 14:26:03.325  INFO 12364 --- [http-nio-9292-exec-2] c.c.p.c.PensionDisbursementController    : END :: Method :: bankServiceCharge() :: 
+2022-03-29 14:26:17.549  INFO 12364 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-03-29 14:26:17.594  INFO 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-03-29 14:26:17.594  INFO 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/pdis]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-03-29 14:26:17.600  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.602  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [RxComputationScheduler-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.604  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [HystrixTimer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.606  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [hystrix-PensionDisbursementController-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.607  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [HystrixTimer-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.609  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [hystrix-PensionDisbursementController-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.612  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [HystrixTimer-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.613  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [hystrix-PensionDisbursementController-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.615  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [HystrixTimer-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.617  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [hystrix-PensionDisbursementController-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.618  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [HystrixTimer-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.620  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [hystrix-PensionDisbursementController-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.622  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [HystrixTimer-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.623  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [pdis] appears to have started a thread named [hystrix-PensionDisbursementController-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@15.0.1/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:920)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2022-03-29 14:26:17.631  INFO 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:26:17.637  INFO 12364 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:26:17.638  INFO 12364 --- [RMI TCP Connection(8)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-03-29 14:26:17.840  WARN 12364 --- [RMI TCP Connection(8)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-03-29 14:26:17.841  INFO 12364 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-03-29 14:26:17.842  INFO 12364 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-03-29 14:26:41.082  INFO 18092 --- [main] c.c.p.PensionDisbursementControllerTest  : No active profile set, falling back to default profiles: default
+2022-03-29 14:26:42.471  INFO 18092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-29 14:26:42.515  INFO 18092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 JPA repository interfaces.
+2022-03-29 14:26:42.915  INFO 18092 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6522872f-8ba0-3da9-8baf-70c095bfeb57
+2022-03-29 14:26:43.749  INFO 18092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-29 14:26:44.130  INFO 18092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-29 14:26:44.275  INFO 18092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-29 14:26:44.415  INFO 18092 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-03-29 14:26:44.857  INFO 18092 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-29 14:26:45.280  INFO 18092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-03-29 14:26:46.110  INFO 18092 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-29 14:26:46.135  INFO 18092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:26:46.637  WARN 18092 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-29 14:26:49.051  INFO 18092 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-29 14:26:49.575  WARN 18092 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-03-29 14:26:49.575  INFO 18092 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-29 14:26:49.590  WARN 18092 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-03-29 14:26:49.590  INFO 18092 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-29 14:26:50.373  INFO 18092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:26:51.537  INFO 18092 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-03-29 14:26:51.539  INFO 18092 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-03-29 14:26:51.585  INFO 18092 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 46 ms
+2022-03-29 14:26:52.779  INFO 18092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-29 14:26:52.835  INFO 18092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-29 14:26:52.957  INFO 18092 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-29 14:26:53.447  INFO 18092 --- [main] c.c.p.PensionDisbursementControllerTest  : Started PensionDisbursementControllerTest in 14.113 seconds (JVM running for 16.12)
+2022-03-29 14:26:54.864  INFO 18092 --- [main] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:26:54.865 DEBUG 18092 --- [main] c.c.p.c.PensionDisbursementController    : 123456789456 43450.0
+2022-03-29 14:26:54.872 DEBUG 18092 --- [main] c.c.p.c.PensionDisbursementController    : returned status: Success
+2022-03-29 14:26:54.872 DEBUG 18092 --- [main] c.c.p.c.PensionDisbursementController    : set done: 10
+2022-03-29 14:26:54.873  INFO 18092 --- [main] c.c.p.c.PensionDisbursementController    : END :: Method :: pensionDisbursement() :: 
+2022-03-29 14:26:54.941  INFO 18092 --- [main] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:26:54.942 DEBUG 18092 --- [main] c.c.p.c.PensionDisbursementController    : 123456789456 43450.0
+2022-03-29 14:26:54.943 DEBUG 18092 --- [main] c.c.p.c.PensionDisbursementController    : returned status: Pension amount calculated is wrong, Please redo the calculation
+2022-03-29 14:26:54.944  INFO 18092 --- [main] c.c.p.c.PensionDisbursementController    : END :: Method :: pensionDisbursement() :: 
+2022-03-29 14:26:55.362  INFO 18092 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplicationTests], using SpringBootContextLoader
+2022-03-29 14:26:55.365  INFO 18092 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-03-29 14:26:55.366  INFO 18092 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplicationTests]: PensionDisbursementMicroserviceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-03-29 14:26:55.371  INFO 18092 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplication for test class com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplicationTests
+2022-03-29 14:26:55.377  INFO 18092 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-03-29 14:26:55.379  INFO 18092 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1be15455, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2ff4d61b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@dfe2875, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@402fcf14, org.springframework.test.context.support.DirtiesContextTestExecutionListener@517d68b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@58b03882, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@24710e61, org.springframework.test.context.event.EventPublishingTestExecutionListener@1a983294, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@209ab1d7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7937f96e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5599f22f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ece769a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7baf7a9d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3d95100f]
+2022-03-29 14:26:56.614  INFO 18092 --- [main] DisbursementMicroserviceApplicationTests : No active profile set, falling back to default profiles: default
+2022-03-29 14:26:57.530  INFO 18092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-29 14:26:57.550  INFO 18092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2022-03-29 14:26:57.678  INFO 18092 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=85787568-f3c9-3621-b6e0-59b5572178b4
+2022-03-29 14:26:57.975  INFO 18092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-03-29 14:26:57.980  INFO 18092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-03-29 14:26:58.006  INFO 18092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-29 14:26:58.027  INFO 18092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-03-29 14:26:58.066  INFO 18092 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-29 14:26:58.067  INFO 18092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:26:58.342  WARN 18092 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-29 14:26:59.876  INFO 18092 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-29 14:27:00.141  WARN 18092 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : Netflix ConfigurationManager has already been installed, unable to re-install
+2022-03-29 14:27:00.446  INFO 18092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:27:02.021  INFO 18092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-29 14:27:02.023  INFO 18092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-29 14:27:02.035  INFO 18092 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-29 14:27:02.097  INFO 18092 --- [main] DisbursementMicroserviceApplicationTests : Started PensionDisbursementMicroserviceApplicationTests in 6.713 seconds (JVM running for 24.77)
+2022-03-29 14:27:03.653  INFO 18092 --- [main] nsionDisbursementMicroserviceApplication : No active profile set, falling back to default profiles: default
+2022-03-29 14:27:04.164  INFO 18092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-29 14:27:04.177  INFO 18092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2022-03-29 14:27:04.299  INFO 18092 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0eb81eb4-c426-3977-a511-d09637fd59ce
+2022-03-29 14:27:04.815  INFO 18092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2022-03-29 14:27:04.846  INFO 18092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-29 14:27:04.847  INFO 18092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-03-29 14:27:05.269  INFO 18092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/pdis]   : Initializing Spring embedded WebApplicationContext
+2022-03-29 14:27:05.270  INFO 18092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1614 ms
+2022-03-29 14:27:05.465  INFO 18092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-03-29 14:27:05.471  INFO 18092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-03-29 14:27:05.490  INFO 18092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-29 14:27:05.512  INFO 18092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-03-29 14:27:05.552  INFO 18092 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-29 14:27:05.553  INFO 18092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:27:05.671  WARN 18092 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-29 14:27:06.016  INFO 18092 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-29 14:27:06.030  WARN 18092 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : Netflix ConfigurationManager has already been installed, unable to re-install
+2022-03-29 14:27:06.129  INFO 18092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:27:07.135  INFO 18092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/pdis'
+2022-03-29 14:27:07.795  INFO 18092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-29 14:27:07.797  INFO 18092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-29 14:27:07.809  INFO 18092 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-29 14:27:07.854  INFO 18092 --- [main] nsionDisbursementMicroserviceApplication : Started PensionDisbursementMicroserviceApplication in 5.53 seconds (JVM running for 30.526)
+2022-03-29 14:27:08.007  INFO 18092 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cognizant.pensiondisbursement.PensionDisbursementServiceTests], using SpringBootContextLoader
+2022-03-29 14:27:08.010  INFO 18092 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.cognizant.pensiondisbursement.PensionDisbursementServiceTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-03-29 14:27:08.011  INFO 18092 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.cognizant.pensiondisbursement.PensionDisbursementServiceTests]: PensionDisbursementServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-03-29 14:27:08.013  INFO 18092 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplication for test class com.cognizant.pensiondisbursement.PensionDisbursementServiceTests
+2022-03-29 14:27:08.017  INFO 18092 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-03-29 14:27:08.018  INFO 18092 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@45cee4d2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@8d44ee6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@e7283dd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@8b62702, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3aecbab2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@10e57077, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@a9375dd, org.springframework.test.context.event.EventPublishingTestExecutionListener@33a4cdba, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6c42c856, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@571f6b61, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@46b3c1c2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@53ef0db3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@29957fe0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@57d5dd0]
+2022-03-29 14:27:08.057  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:27:08.058 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:27:08.060 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:27:08.061  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: verifyData() :: 
+2022-03-29 14:27:08.077  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: getBankCharge() :: 
+2022-03-29 14:27:08.078 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : service charge: 500.0
+2022-03-29 14:27:08.078  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: getBankCharge() :: 
+2022-03-29 14:27:08.093  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:27:08.094 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:27:08.113  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:27:08.115 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:27:08.116 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: family
+2022-03-29 14:27:08.117 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : family pension amount calculation success
+2022-03-29 14:27:08.132  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:27:08.132 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:27:08.133 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: both
+2022-03-29 14:27:08.134  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: verifyData() :: 
+2022-03-29 14:27:08.154  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:27:08.155 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:27:08.156 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:27:08.156  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: verifyData() :: 
+2022-03-29 14:27:08.175  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:27:08.175 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:27:08.176 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: family
+2022-03-29 14:27:08.177  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: verifyData() :: 
+2022-03-29 14:27:08.192  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:27:08.192 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:27:08.194 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:27:08.194 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : family pension amount calculation success
+2022-03-29 14:27:08.211  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: getBankCharge() :: 
+2022-03-29 14:27:08.213 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : service charge: 550.0
+2022-03-29 14:27:08.213  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: getBankCharge() :: 
+2022-03-29 14:27:08.234  INFO 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:27:08.235 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:27:08.238 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:27:08.239 DEBUG 18092 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : family pension amount calculation success
+2022-03-29 14:27:08.276  INFO 18092 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:27:08.276  INFO 18092 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:27:08.313  WARN 18092 --- [SpringContextShutdownHook] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-03-29 14:27:08.314  INFO 18092 --- [SpringContextShutdownHook] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-29 14:27:08.331  INFO 18092 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:27:08.331  INFO 18092 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:27:08.331  INFO 18092 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-03-29 14:27:08.331  INFO 18092 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-03-29 14:27:08.336  INFO 18092 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-03-29 14:27:08.336  INFO 18092 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-29 14:27:08.341  INFO 18092 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-03-29 14:27:08.341  INFO 18092 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-29 14:27:08.366  INFO 18092 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:27:08.370  INFO 18092 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:27:08.371  INFO 18092 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-03-29 14:27:08.372  INFO 18092 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-03-29 14:27:08.374  INFO 18092 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-03-29 14:28:04.095  INFO 4172 --- [main] c.c.p.PensionDisbursementControllerTest  : No active profile set, falling back to default profiles: default
+2022-03-29 14:28:05.776  INFO 4172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-29 14:28:05.862  INFO 4172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 0 JPA repository interfaces.
+2022-03-29 14:28:06.551  INFO 4172 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6522872f-8ba0-3da9-8baf-70c095bfeb57
+2022-03-29 14:28:07.719  INFO 4172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-29 14:28:08.078  INFO 4172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-29 14:28:08.207  INFO 4172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-29 14:28:08.341  INFO 4172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-03-29 14:28:08.744  INFO 4172 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-29 14:28:09.081  INFO 4172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-03-29 14:28:09.697  INFO 4172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-29 14:28:09.714  INFO 4172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:28:10.155  WARN 4172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-29 14:28:12.026  INFO 4172 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-29 14:28:12.366  WARN 4172 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-03-29 14:28:12.367  INFO 4172 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-29 14:28:12.382  WARN 4172 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-03-29 14:28:12.383  INFO 4172 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-29 14:28:13.032  INFO 4172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:28:13.854  INFO 4172 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-03-29 14:28:13.857  INFO 4172 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-03-29 14:28:13.886  INFO 4172 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 29 ms
+2022-03-29 14:28:14.978  INFO 4172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-29 14:28:15.013  INFO 4172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-29 14:28:15.087  INFO 4172 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-29 14:28:15.521  INFO 4172 --- [main] c.c.p.PensionDisbursementControllerTest  : Started PensionDisbursementControllerTest in 13.29 seconds (JVM running for 15.447)
+2022-03-29 14:28:16.632  INFO 4172 --- [main] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:28:16.633 DEBUG 4172 --- [main] c.c.p.c.PensionDisbursementController    : 123456789456 43450.0
+2022-03-29 14:28:16.636 DEBUG 4172 --- [main] c.c.p.c.PensionDisbursementController    : returned status: Success
+2022-03-29 14:28:16.636 DEBUG 4172 --- [main] c.c.p.c.PensionDisbursementController    : set done: 10
+2022-03-29 14:28:16.636  INFO 4172 --- [main] c.c.p.c.PensionDisbursementController    : END :: Method :: pensionDisbursement() :: 
+2022-03-29 14:28:16.681  INFO 4172 --- [main] c.c.p.c.PensionDisbursementController    : START :: Method :: pensionDisbursement() :: 
+2022-03-29 14:28:16.681 DEBUG 4172 --- [main] c.c.p.c.PensionDisbursementController    : 123456789456 43450.0
+2022-03-29 14:28:16.682 DEBUG 4172 --- [main] c.c.p.c.PensionDisbursementController    : returned status: Pension amount calculated is wrong, Please redo the calculation
+2022-03-29 14:28:16.683  INFO 4172 --- [main] c.c.p.c.PensionDisbursementController    : END :: Method :: pensionDisbursement() :: 
+2022-03-29 14:28:16.987  INFO 4172 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplicationTests], using SpringBootContextLoader
+2022-03-29 14:28:16.994  INFO 4172 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-03-29 14:28:17.007  INFO 4172 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplicationTests]: PensionDisbursementMicroserviceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-03-29 14:28:17.011  INFO 4172 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplication for test class com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplicationTests
+2022-03-29 14:28:17.017  INFO 4172 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-03-29 14:28:17.018  INFO 4172 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1be15455, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2ff4d61b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@dfe2875, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@402fcf14, org.springframework.test.context.support.DirtiesContextTestExecutionListener@517d68b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@58b03882, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@24710e61, org.springframework.test.context.event.EventPublishingTestExecutionListener@1a983294, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@209ab1d7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7937f96e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5599f22f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ece769a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7baf7a9d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3d95100f]
+2022-03-29 14:28:18.244  INFO 4172 --- [main] DisbursementMicroserviceApplicationTests : No active profile set, falling back to default profiles: default
+2022-03-29 14:28:18.789  INFO 4172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-29 14:28:18.800  INFO 4172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
+2022-03-29 14:28:18.884  INFO 4172 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=85787568-f3c9-3621-b6e0-59b5572178b4
+2022-03-29 14:28:19.173  INFO 4172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-03-29 14:28:19.180  INFO 4172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-03-29 14:28:19.206  INFO 4172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-29 14:28:19.220  INFO 4172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-03-29 14:28:19.249  INFO 4172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-29 14:28:19.250  INFO 4172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:28:19.442  WARN 4172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-29 14:28:20.184  INFO 4172 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-29 14:28:20.277  WARN 4172 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : Netflix ConfigurationManager has already been installed, unable to re-install
+2022-03-29 14:28:20.524  INFO 4172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:28:21.761  INFO 4172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-29 14:28:21.763  INFO 4172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-29 14:28:21.774  INFO 4172 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-29 14:28:21.812  INFO 4172 --- [main] DisbursementMicroserviceApplicationTests : Started PensionDisbursementMicroserviceApplicationTests in 4.789 seconds (JVM running for 21.74)
+2022-03-29 14:28:23.141  INFO 4172 --- [main] nsionDisbursementMicroserviceApplication : No active profile set, falling back to default profiles: default
+2022-03-29 14:28:23.667  INFO 4172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-29 14:28:23.678  INFO 4172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2022-03-29 14:28:23.762  INFO 4172 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0eb81eb4-c426-3977-a511-d09637fd59ce
+2022-03-29 14:28:24.153  INFO 4172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9292 (http)
+2022-03-29 14:28:24.172  INFO 4172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-29 14:28:24.172  INFO 4172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-03-29 14:28:24.460  INFO 4172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/pdis]   : Initializing Spring embedded WebApplicationContext
+2022-03-29 14:28:24.462  INFO 4172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1319 ms
+2022-03-29 14:28:24.620  INFO 4172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-03-29 14:28:24.626  INFO 4172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-03-29 14:28:24.636  INFO 4172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-29 14:28:24.645  INFO 4172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-03-29 14:28:24.668  INFO 4172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-29 14:28:24.669  INFO 4172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:28:24.808  WARN 4172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-29 14:28:25.141  INFO 4172 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-29 14:28:25.154  WARN 4172 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : Netflix ConfigurationManager has already been installed, unable to re-install
+2022-03-29 14:28:25.223  INFO 4172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:28:25.930  INFO 4172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9292 (http) with context path '/pdis'
+2022-03-29 14:28:26.387  INFO 4172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-29 14:28:26.388  INFO 4172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-29 14:28:26.395  INFO 4172 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-29 14:28:26.423  INFO 4172 --- [main] nsionDisbursementMicroserviceApplication : Started PensionDisbursementMicroserviceApplication in 4.469 seconds (JVM running for 26.35)
+2022-03-29 14:28:26.526  INFO 4172 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cognizant.pensiondisbursement.PensionDisbursementServiceTests], using SpringBootContextLoader
+2022-03-29 14:28:26.528  INFO 4172 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.cognizant.pensiondisbursement.PensionDisbursementServiceTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-03-29 14:28:26.528  INFO 4172 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.cognizant.pensiondisbursement.PensionDisbursementServiceTests]: PensionDisbursementServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-03-29 14:28:26.530  INFO 4172 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.cognizant.pensiondisbursement.PensionDisbursementMicroserviceApplication for test class com.cognizant.pensiondisbursement.PensionDisbursementServiceTests
+2022-03-29 14:28:26.540  INFO 4172 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-03-29 14:28:26.540  INFO 4172 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@45cee4d2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@8d44ee6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@e7283dd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@8b62702, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3aecbab2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@10e57077, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@a9375dd, org.springframework.test.context.event.EventPublishingTestExecutionListener@33a4cdba, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6c42c856, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@571f6b61, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@46b3c1c2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@53ef0db3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@29957fe0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@57d5dd0]
+2022-03-29 14:28:26.565  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:28:26.566 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:28:26.569 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:28:26.570  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: verifyData() :: 
+2022-03-29 14:28:26.580  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: getBankCharge() :: 
+2022-03-29 14:28:26.581 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : service charge: 500.0
+2022-03-29 14:28:26.581  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: getBankCharge() :: 
+2022-03-29 14:28:26.591  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:28:26.591 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:28:26.607  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:28:26.607 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:28:26.608 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: family
+2022-03-29 14:28:26.609 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : family pension amount calculation success
+2022-03-29 14:28:26.622  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:28:26.622 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:28:26.622 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: both
+2022-03-29 14:28:26.623  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: verifyData() :: 
+2022-03-29 14:28:26.635  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:28:26.636 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:28:26.637 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:28:26.637  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: verifyData() :: 
+2022-03-29 14:28:26.648  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:28:26.649 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:28:26.650 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: family
+2022-03-29 14:28:26.650  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: verifyData() :: 
+2022-03-29 14:28:26.663  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:28:26.664 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:28:26.664 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:28:26.666 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : family pension amount calculation success
+2022-03-29 14:28:26.678  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: getBankCharge() :: 
+2022-03-29 14:28:26.679 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : service charge: 550.0
+2022-03-29 14:28:26.679  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : END :: Method :: getBankCharge() :: 
+2022-03-29 14:28:26.692  INFO 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : START :: Method :: verifyData() :: 
+2022-03-29 14:28:26.693 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : Aadhar no: 123456789456
+2022-03-29 14:28:26.694 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : pension type: self
+2022-03-29 14:28:26.694 DEBUG 4172 --- [main] c.c.p.s.PensionDisbursementServiceImpl   : family pension amount calculation success
+2022-03-29 14:28:26.719  INFO 4172 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:28:26.720  INFO 4172 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:28:26.754  WARN 4172 --- [SpringContextShutdownHook] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-03-29 14:28:26.754  INFO 4172 --- [SpringContextShutdownHook] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-29 14:28:26.768  INFO 4172 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:28:26.769  INFO 4172 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-03-29 14:28:26.768  INFO 4172 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:28:26.771  INFO 4172 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-03-29 14:28:26.775  INFO 4172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-03-29 14:28:26.775  INFO 4172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-29 14:28:26.776  INFO 4172 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:28:26.780  INFO 4172 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-29 14:28:26.781  INFO 4172 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-03-29 14:28:26.782  INFO 4172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-03-29 14:28:26.789  INFO 4172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-29 14:28:26.790  INFO 4172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-03-29 14:28:26.792  INFO 4172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
