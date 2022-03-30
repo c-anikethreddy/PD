@@ -48,7 +48,7 @@ public class PensionDisbursementServiceImpl implements PensionDisbursementServic
 	 */
 	@Override
 	public int verifyData(ProcessPensionInput processPensionInput) {
-		// TODO Auto-generated method stub
+		
 		log.info("START :: Method :: verifyData() :: ");
 		log.debug(environment.getProperty("message.aadhar") + processPensionInput.getAadharNumber().toString());
 
