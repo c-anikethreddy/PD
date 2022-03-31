@@ -14,8 +14,8 @@ import com.cognizant.pensiondisbursement.model.PensionerDetail;
  * annotation @FeignClient and passing name of microservice and its url
  *
  */
-@FeignClient(name = "Pensioner-detail-microservice", url="http://localhost:9191")
-//@FeignClient(name = "Pensioner-detail-microservice", url="http://pensionerdetailmicroservice-env.us-east-1.elasticbeanstalk.com")
+//@FeignClient(name = "Pensioner-detail-microservice", url="http://localhost:9191")
+@FeignClient(name = "Pensioner-detail-microservice", url="http://pensionerdetailmicroservice-env.us-east-1.elasticbeanstalk.com")
 public interface PensionerDetailsProxy {
 
 	/**
